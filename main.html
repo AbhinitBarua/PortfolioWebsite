@@ -1,1 +1,508 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinit Barua | Full-Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="logo-icon">🌀</span>
+                    <span class="logo-text">Node Orbis</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Abhinit Barua">Abhinit Barua</h1>
+                <div class="typing-container">
+                    <span class="static-text">I'm a </span>
+                    <span class="dynamic-text"></span>
+                </div>
+                <p class="hero-desc">Building smart apps, powerful tools, and digital experiences that make life easier and more fun.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="matrix-container">
+                    <canvas id="matrix"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi there! I'm <span class="highlight">Abhinit Barua</span>, a 14-year-old full-stack developer, tech enthusiast, an ethical hacker and founder of Node Orbis.</p>
+                    <p>I love building smart apps, powerful tools, and digital experiences that make life easier and more fun. Whether it's web development, automation, or AI – I'm always exploring and learning something new.</p>
+                    <p>Currently working on: advanced multitools, smart ambulance systems, and more!</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-value"><i class="fas fa-code"></i></div>
+                            <div class="stat-name">Full-Stack Dev</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value"><i class="fas fa-shield-alt"></i></div>
+                            <div class="stat-name">Ethical Hacker</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value"><i class="fas fa-rocket"></i></div>
+                            <div class="stat-name">Founder</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skill-categories">
+                    <div class="category active" data-category="all">All</div>
+                    <div class="category" data-category="languages">Languages</div>
+                    <div class="category" data-category="frameworks">Frameworks</div>
+                    <div class="category" data-category="tools">Tools</div>
+                    <div class="category" data-category="databases">Databases</div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <div class="skill-name">Python</div>
+                    </div>
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <div class="skill-name">HTML5</div>
+                    </div>
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <div class="skill-name">CSS3</div>
+                    </div>
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon"><i class="fab fa-java"></i></div>
+                        <div class="skill-name">Java</div>
+                    </div>
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon">C</div>
+                        <div class="skill-name">C</div>
+                    </div>
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon">C++</div>
+                        <div class="skill-name">C++</div>
+                    </div>
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon">C#</div>
+                        <div class="skill-name">C#</div>
+                    </div>
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon"><i class="fab fa-rust"></i></div>
+                        <div class="skill-name">Rust</div>
+                    </div>
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon"><i class="fab fa-php"></i></div>
+                        <div class="skill-name">PHP</div>
+                    </div>
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon"><i class="fab fa-ruby"></i></div>
+                        <div class="skill-name">Ruby</div>
+                    </div>
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon">Lua</div>
+                        <div class="skill-name">Lua</div>
+                    </div>
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon">TS</div>
+                        <div class="skill-name">TypeScript</div>
+                    </div>
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                        <div class="skill-name">Bash</div>
+                    </div>
+                    <div class="skill-card" data-type="languages">
+                        <div class="skill-icon">ASM</div>
+                        <div class="skill-name">Assembly</div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skill-card" data-type="frameworks">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <div class="skill-name">React</div>
+                    </div>
+                    <div class="skill-card" data-type="frameworks">
+                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                        <div class="skill-name">Node.js</div>
+                    </div>
+                    <div class="skill-card" data-type="frameworks">
+                        <div class="skill-icon"><i class="fab fa-angular"></i></div>
+                        <div class="skill-name">Angular</div>
+                    </div>
+                    <div class="skill-card" data-type="frameworks">
+                        <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                        <div class="skill-name">Bootstrap</div>
+                    </div>
+                    <div class="skill-card" data-type="frameworks">
+                        <div class="skill-icon">EJS</div>
+                        <div class="skill-name">EJS</div>
+                    </div>
+                    <div class="skill-card" data-type="frameworks">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <div class="skill-name">React Native</div>
+                    </div>
+                    <div class="skill-card" data-type="frameworks">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <div class="skill-name">Django</div>
+                    </div>
+                    <div class="skill-card" data-type="frameworks">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <div class="skill-name">Flask</div>
+                    </div>
+                    <div class="skill-card" data-type="frameworks">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <div class="skill-name">jQuery</div>
+                    </div>
+                    <div class="skill-card" data-type="frameworks">
+                        <div class="skill-icon">JWT</div>
+                        <div class="skill-name">JWT</div>
+                    </div>
+                    <div class="skill-card" data-type="frameworks">
+                        <div class="skill-icon">PT</div>
+                        <div class="skill-name">PyTorch</div>
+                    </div>
+                    <div class="skill-card" data-type="frameworks">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <div class="skill-name">Chart.js</div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon"><i class="fab fa-github"></i></div>
+                        <div class="skill-name">GitHub</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <div class="skill-name">Git</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon"><i class="fab fa-gitlab"></i></div>
+                        <div class="skill-name">GitLab</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                        <div class="skill-name">Docker</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+                        <div class="skill-name">Kubernetes</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                        <div class="skill-name">AWS</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                        <div class="skill-name">Figma</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon">NP</div>
+                        <div class="skill-name">NumPy</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon">MPL</div>
+                        <div class="skill-name">Matplotlib</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon"><i class="fab fa-adobe"></i></div>
+                        <div class="skill-name">Adobe</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                        <div class="skill-name">Terminal</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon"><i class="fab fa-npm"></i></div>
+                        <div class="skill-name">NPM</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon">CX</div>
+                        <div class="skill-name">Context API</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon">AQ</div>
+                        <div class="skill-name">Apollo GraphQL</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon"><i class="fab fa-arduino"></i></div>
+                        <div class="skill-name">Arduino</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon">🎮</div>
+                        <div class="skill-name">Unity</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon">🎮</div>
+                        <div class="skill-name">Unreal Engine</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon">GL</div>
+                        <div class="skill-name">OpenGL</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon">IS</div>
+                        <div class="skill-name">Inkscape</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon">CD</div>
+                        <div class="skill-name">CUDA</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon">NT</div>
+                        <div class="skill-name">Notion</div>
+                    </div>
+                    <div class="skill-card" data-type="tools">
+                        <div class="skill-icon">PS</div>
+                        <div class="skill-name">PowerShell</div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-card" data-type="databases">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <div class="skill-name">MongoDB</div>
+                    </div>
+                    <div class="skill-card" data-type="databases">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <div class="skill-name">MySQL</div>
+                    </div>
+                    <div class="skill-card" data-type="databases">
+                        <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                        <div class="skill-name">Firebase</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="games">Games</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="development hardware">
+                    <div class="project-image">
+                        <img src="/api/placeholder/600/400" alt="Custom Computer Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Building My Own Computer</h3>
+                        <p class="project-description">An ambitious project to design and assemble a fully functional computer from scratch, featuring custom-designed PCBs and hardware integrations that push the boundaries of creativity and technical precision.</p>
+                        <div class="project-tech">
+                            <span>Hardware</span>
+                            <span>PCB Design</span>
+                            <span>Assembly</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="security tools">
+                    <div class="project-image">
+                        <img src="/api/placeholder/600/400" alt="Neutral Scalper">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Neutral Scalper</h3>
+                        <p class="project-description">A revolutionary multitool integrating over 500 advanced tools into a single platform, providing solutions for networking, security, data analysis, and more—all designed with efficiency and scalability in mind.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>C++</span>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="games">
+                    <div class="project-image">
+                        <img src="/api/placeholder/600/400" alt="OBLAK Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">OBLAK</h3>
+                        <p class="project-description">A rhythm game that challenges players with precision and creativity, blending immersive gameplay mechanics with vibrant audiovisual elements for a unique gaming experience.</p>
+                        <div class="project-tech">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>Game Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="tools development">
+                    <div class="project-image">
+                        <img src="/api/placeholder/600/400" alt="Philosopher's Bundle">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Philosopher's Bundle</h3>
+                        <p class="project-description">A premium business management toolkit featuring an advanced MS Access system, a PowerPoint analytics dashboard, and a feature-packed Excel toolkit, all designed to simplify and optimize business operations.</p>
+                        <div class="project-tech">
+                            <span>MS Office</span>
+                            <span>VBA</span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>abhinitinspace@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Worldwide</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/AbhinitBarua" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/TheTech_Factory" target="_blank" class="social-link"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/thetech.factory" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.com/invite/YgSM8mPw52" target="_blank" class="social-link"><i class="fab fa-discord"></i></a>
+                        <a href="https://youtube.com/channel/UCEdHfvVGKmp91zFmQc5j5oA" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="https://reddit.com/r/TheTechFactory/?rdt=43049" target="_blank" class="social-link"><i class="fab fa-reddit"></i></a>
+                        <a href="https://gitlab.com/thatsnotabhiinit" target="_blank" class="social-link"><i class="fab fa-gitlab"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">🌀</span>
+                    <span class="logo-text">Node Orbis</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/AbhinitBarua" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/TheTech_Factory" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://instagram.com/thetech.factory" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Abhinit Barua. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
